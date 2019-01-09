@@ -1,0 +1,131 @@
+/*---------------------------------------
+    body
+-----------------------------------------*/
+
+body {
+    position: relative;
+}
+
+html,body {
+  width: 100%;
+  overflow-x: hidden;
+  left:0;
+  top:0;
+  margin:0;
+  padding:0
+}
+
+html {
+  font-size: 100%;
+}
+
+
+
+
+/*---------------------------------------
+    Typography
+-----------------------------------------*/
+
+h1,h2,h3,h4 {
+    font-weight: 300;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin:0;
+  }
+
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 4px;
+    font-size: 2rem;
+    font-weight: 600;
+    color:white;
+    text-decoration: underline;
+    padding: 20px;
+    margin:0;
+}
+
+h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin:0;
+}
+
+p {
+  color: #888;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 34px;
+  margin:0;
+}
+
+
+/*---------------------------------------
+    Custom Styles
+-----------------------------------------*/
+
+#banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/banner.jpg');
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    position: relative;
+    color:white;
+    top:0;
+    left:0;
+}
+
+#banner-overlay {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    text-align: center
+
+}
+
+#banner h1{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 5rem;
+    font-weight: 600;
+    color:white;
+}
+
+#banner h2{
+    padding: 50px 0 0 0;
+    text-transform: uppercase;
+}
+
+#about-me{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right,#8e9eab
+    0%, #eef2f3 100%);
+}
+
+#about-me h2{
+    -ms-transform: translateY(-100px); /* IE 9 */
+    -webkit-transform: translateY(-100px); /* Safari */
+    transform: translateY(-100px);
+    
+}
+
+#about-me-arrow{
+    color: white;
+    width:100px;
+    -ms-transform: translateY(50px); /* IE 9 */
+    -webkit-transform: translateY(50px); /* Safari */
+    transform: translateY(50px);
+    padding-left:20px;
+}
