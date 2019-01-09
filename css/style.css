@@ -175,7 +175,7 @@ margin-top: 20px;
   }
 
 
-.demo{margin: 100px 0 100px;}
+.demo{padding: 100px 0 100px;}
 .main-timeline6{overflow:hidden;position:relative}
 .main-timeline6 .timeline{width:50%;float:right;position:relative;z-index:1}
 .main-timeline6 .timeline:after,.main-timeline6 .timeline:before{position:absolute;top:50%;content:"";display:block;clear:both}
