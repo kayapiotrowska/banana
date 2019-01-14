@@ -88,9 +88,9 @@ p {
 }
 
 .title{
-    -ms-transform: translateY(-80px); /* IE 9 */
-    -webkit-transform: translateY(-80px); /* Safari */
-    transform: translateY(-80px); 
+    -ms-transform: translateY(-100px); /* IE 9 */
+    -webkit-transform: translateY(-100px); /* Safari */
+    transform: translateY(-100px); 
 }
 
 .heart-img
@@ -99,6 +99,107 @@ p {
     width:15px;
 }
 
+/*---------------------------------------
+    Navigation
+-----------------------------------------*/
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 50px;
+    z-index: 11;
+}
+
+nav ul {
+    line-height: 50px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+nav ul li a {
+    font-family: 'Shadows Into Light', cursive;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 0.6em;
+}
+
+@media screen and (max-width: 990px) {
+    nav ul {
+        padding-right: 20px;
+    }
+        nav ul li a {
+            font-size: 16px;
+    }
+}
+
+nav ul li a:hover {
+text-decoration: underline;
+color: #fff;
+}
+
+.menu-icon {
+    line-height: 40px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+
+@media(max-width: 786px) {
+
+    nav i {
+    font-size: 200%;
+    color: #D3D7DA;
+    margin: 10px 10px;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+
+}
 
 /*---------------------------------------
     Banner
@@ -139,12 +240,15 @@ p {
 }
 
 #banner h2{
-    padding: 50px 0 0 0;
+    padding: 100px 0 0 0;
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 990px) {
     #banner h1 {
+        font-size: 3rem;
+    }
+    #banner h2 {
         font-size: 2rem;
     }
   }
@@ -266,7 +370,11 @@ margin-top: 20px;
     background: linear-gradient(to right,#0f2027 0%,#203A43 50%, #2c5364 100%);
     text-align: right;
     position:relative;
-    
+}
+@media screen and (max-width: 990px) {
+    #service{
+        min-height: 140vh;
+    }
 }
 
 #service h2{
@@ -279,25 +387,21 @@ margin-top: 20px;
     width:100px;
     -ms-transform: translateY(-80px); /* IE 9 */
     -webkit-transform: translateY(-80px); /* Safari */
-    transform: translateY(-80px); */
+    transform: translateY(-80px); 
     padding-left:20px;
 }
 
 #service-title{
-    transition: transform 2s;
-    transform: translateY(-80px);
-    -ms-transform: translateY(-80px); /* IE 9 */
-    -webkit-transform: translateY(-80px); /* Safari */
+
     z-index: 10;
 }
 
 @media screen and (max-width: 990px) {
     #service-title {
         transition: transform 2s;
-        transform: translateY(-150px);
-        -ms-transform: translateY(-150px); /* IE 9 */
-        -webkit-transform: translateY(-150px); /* Safari */
-
+        transform: translateY(-100px);
+        -ms-transform: translateY(-100px); /* IE 9 */
+        -webkit-transform: translateY(-100px); /* Safari */
     }
   }
 
@@ -439,3 +543,52 @@ margin-top: 20px;
   }
 
 
+/*---------------------------------------
+    Contact
+-----------------------------------------*/
+
+
+#contact {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/bulb.png');
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-position-x: right;
+    background-position-y: bottom;
+    position: relative;
+    top:0;
+    left:0;
+}
+
+#contact h2, #contact p, #contact a{
+    color:black;
+    text-align: left;
+}
+
+#contact-arrow{
+    height:100px;
+    -ms-transform: translateY(50px); /* IE 9 */
+    -webkit-transform: translateY(50px); /* Safari */
+    transform: translateY(50px); 
+    padding-left:20px;
+}
+
+#somerandomname {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+}
+
+/*
+@media screen and (max-width: 990px) {
+    #contact-overlay {
+display: inline-block;
+    }
+  }
+*/
