@@ -370,7 +370,15 @@ margin-top: 20px;
     background: linear-gradient(to right,#0f2027 0%,#203A43 50%, #2c5364 100%);
     text-align: right;
     position:relative;
+
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  } 
+
 @media screen and (max-width: 990px) {
     #service{
         min-height: 140vh;
@@ -408,23 +416,13 @@ margin-top: 20px;
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,800);
 
 
-
-.vertical-center {
-    top: 0;
-    left: 0;
-    position:absolute;    
-    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 100vh; /* These two lines are counted as one :-)       */ 
-    display: flex;
-    align-items: center;
-  }
-
 #service .card{
     width:450px;
     height: 270px;
     text-align: center;  
     margin-top:50px;
     margin-bottom: 50px;
+    display: inline-block;
   }
 
 #service figure{
@@ -450,10 +448,6 @@ margin-top: 20px;
     height: 270px;
   }
 
-  #service figure.front{
-    transform: rotateY(0deg);
-    z-index: 2;
-  }
 
   #service figure .caption {
     position: absolute;
@@ -465,11 +459,11 @@ margin-top: 20px;
     padding: 2em;
   }
   
-  #service .front .caption{
+  #service figure .caption{
     font-size: 1.25em;
   }
   
-  #service .front .caption:before {
+  #service figure .caption:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -482,12 +476,12 @@ margin-top: 20px;
     transition: opacity 0.35s, transform 0.35s;
   }
 
-  #service .front:hover .caption:before{
+  #service figure:hover .caption:before{
     opacity: 1;
     transform: translate3d(0,0,0);
   }
   
-  #service .front h2{
+  #service figure h2{
     word-spacing: -0.15em;
     font-weight: 300;
     font-size: 1.6em;
@@ -500,7 +494,7 @@ margin-top: 20px;
     transform: translate3d(0,-50%,0);
   }
   
-  #service .front h2:after{
+  #service figure h2:after{
     position: absolute;
     bottom: -10px;
     left: 70px;
@@ -512,18 +506,18 @@ margin-top: 20px;
     transform: translate3d(-130%,0,0);
   }
   
-  #service .front:hover h2 {
+  #service figure:hover h2 {
     color: black;
     -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
     transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
   }
   
-  #service .front:hover h2:after {
+  #service figure:hover h2:after {
     transform: translate3d(0,0,0);
   }
 
   
-#service .front p {
+#service figure p {
     letter-spacing: 1px;
     font-size: 68.5%;
     position: absolute;
@@ -537,11 +531,10 @@ margin-top: 20px;
   }
 
   
-#service .front:hover p {
+#service figure:hover p {
     opacity: 1;
     transform: translate3d(0,0,0);
   }
-
 
 /*---------------------------------------
     Contact
