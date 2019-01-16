@@ -135,7 +135,7 @@ nav ul li {
 nav ul li a {
     font-family: 'Shadows Into Light', cursive;
     text-decoration: none;
-    color: #fff;
+    color: #fff; 
     font-size: 20px;
     letter-spacing: 0.6em;
 }
@@ -151,7 +151,7 @@ nav ul li a {
 
 nav ul li a:hover {
 text-decoration: underline;
-color: #fff;
+color: grey;
 }
 
 .menu-icon {
@@ -393,14 +393,16 @@ margin-top: 20px;
 #service-arrow{
     color: white;
     width:100px;
-    -ms-transform: translateY(-80px); /* IE 9 */
-    -webkit-transform: translateY(-80px); /* Safari */
-    transform: translateY(-80px); 
+    -ms-transform: translateY(-70px); /* IE 9 */
+    -webkit-transform: translateY(-70px); /* Safari */
+    transform: translateY(-70px); 
     padding-left:20px;
 }
 
 #service-title{
-
+    -ms-transform: translateY(60px); /* IE 9 */
+    -webkit-transform: translateY(60px); /* Safari */
+    transform: translateY(60px);
     z-index: 10;
 }
 
